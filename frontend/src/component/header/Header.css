@@ -1,0 +1,218 @@
+/* Header Styles */
+.header {
+  /* background-color: #00b6b3; Header background color */
+   /* Text color for links and text in the header */
+  padding: 10px 0;
+  display: flex;
+  background: #1A2980;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #26D0CE, #1A2980); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+}
+
+/* Logo Styles */
+.logo >a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.header > .nav-container{
+width:60rem;
+border: 1px sloid black;
+/* background-color: #b5ba2a; */
+position: relative;
+}
+
+.nav-container > .search-bar{
+width: 100%;
+/* background-color: yellowgreen; */
+background: #b92b27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1565C0, #b92b27);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1565C0, #b92b27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+/* Navigation Menu Styles */
+.nav-menu > ul {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu > ul > li {
+  /* margin-right: 20px;
+  position: relative; */
+}
+/* dropdown */
+.nav-menu >ul> li> a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+.megamenu{
+  position: absolute;
+  /* background-color: rgb(172, 247, 247); */
+  width: 100%;
+  top: 100%;
+  /* height: 300px; */
+  left: 0px;
+  border-radius: 5px;
+  z-index: 8;
+  opacity: 0;
+  visibility: hidden;
+} 
+/* submenu */
+.megamenu > ul{
+  list-style: none;
+  background-color: #b1e2f7;
+  /* width: 25%; */
+  height: 100%;
+  position:relative;
+  
+  }
+
+  .megamenu > ul>li{
+  }
+  
+  .megamenu > ul>li>a{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+nav>ul>li:hover .megamenu{
+  opacity: 1;
+  visibility: visible;
+}
+/* .dropdown:hover {
+  background-color: #403a3a;
+} */
+
+/* Dropdown Styles */
+/* .submenu {
+  display: none;
+  position: absolute;
+  background-color: #403a3a;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+} */
+
+/* submenu */
+.submenu-container{
+  /* border: 1px solid black;position: relative; */
+}
+
+.submenu  {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  background-color: #403a3a;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.submenu-container> ul >li >a{
+  text-decoration: none;
+  
+}
+
+.submenu2{
+  /* visibility: hidden; */
+  /* position: absolute; */
+  /* left: 100%; */
+  height: 95%;
+  list-style: none;
+  flex-wrap: wrap;
+  background-color: #299fb4;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 200;
+ /* transform: translatex(100%); */
+ transform: translateY(-10%);
+ left: 25%;
+  /* top: 100%; */
+  width: 75%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.submenu2>li{
+  text-decoration: none;
+  color: #ff6b6b;
+}
+.submenu>li>a> ul >li :hover .submenu2 {
+ 
+  background-color: #73c8ed;
+  border-bottom: 20px;
+  border-color: #fff;
+  opacity: 1;
+  visibility: visible;
+}
+/* User Account Styles */
+.user-account{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 3rem;
+  padding-right: 2rem;
+}
+.user-account a {
+  text-decoration: none;
+  color: #fff;
+ 
+}
+
+.queryhead{
+  padding: 3px;
+
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  color: #fff;
+  
+}
+.contact__option-icon{
+  padding-right: 1rem;
+  padding-top: 8px
+}
+
+/* Search Bar Styles */
+.search-bar input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  height: 2rem;
+  width: 80%;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  background-color: #ff6b6b; /* Button background color */
+  color: #fff;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 3rem;
+  width: 11rem;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  /* Add mobile menu icon and styles here */
+}

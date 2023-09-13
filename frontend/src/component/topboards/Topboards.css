@@ -1,0 +1,45 @@
+/* TopBoards.css */
+
+.top-boards {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5rem;
+  }
+  
+  .top-boards h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .board-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+  }
+  
+  .board-list li {
+    background-color: #fff;
+    border-radius: 20px ;
+    border: 1px solid #1c909f;
+    padding: 7px 15px;
+    margin: 5px 5px;
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .board-list li:hover {
+    background-color: #1c909f;
+    color: #fff;
+  }
+  
